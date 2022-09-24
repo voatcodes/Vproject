@@ -1,0 +1,263 @@
+@font-face {
+  font-family: WorkSans;
+  src: url(WorkSans-VariableFont_wght.ttf);
+}
+
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: WorkSans;
+  }
+
+  header{
+    width: 100%;
+    background-color: #82cce4;
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+  }
+
+
+  header .logo {
+    text-decoration: none;
+    color: rgb(13, 57, 13);
+    font-size: 55px;
+    font-weight: 700;
+    margin-left: 30px;
+    padding: 5px 0 0 15px;
+    letter-spacing: 2px;
+  } 
+  
+ 
+  header .navbar{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin-left: 1000px;
+  } 
+
+  header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+  }
+
+  header .navbar li a{
+    text-decoration: none;
+    color: rgb(13, 57, 13);
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-size: 20px;
+    font-weight: 550;
+  }
+
+
+
+  .firstsection{
+    /* position: relative; */
+    width: 100%;
+    min-height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/Imagesection1.avif);
+  
+  }
+
+  .firstsection .firstsectioncontent{
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 250px;
+  }
+
+
+
+  .firstsection .firstsectioncontent h2{
+    font-weight: 900;
+    font-size: 50px;
+    color: rgb(13, 57, 13);
+    margin-bottom: 20px;
+  }
+
+  .firstsection .firstsectioncontent  p{
+    font-weight: 550;
+    color: rgb(13, 57, 13);
+    margin-bottom: 40px;
+    font-size: 23px;
+  }
+
+  .firstsection .firstsectioncontent a{
+    color: white;
+    background-color: blue;
+    padding: 10px 10px;
+    text-decoration: none;
+    width: 200px;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+
+  .firstsection .firstsectioncontent a:hover{
+    color: aqua;
+    background-color: rgb(13, 57, 13);
+  }
+
+
+  .secondsection{
+    padding: 40px;
+    background-color: #ccedf8;
+  }
+
+  #row1secondsection{
+    margin-left: 600px;
+    color: rgb(13, 57, 13);
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+  }
+
+  #row2secondsection{
+    color: rgb(13, 57, 13);
+    font-size: 21px;
+    margin-bottom: 20px;
+    line-height: 24pt;
+  }
+
+.lastsection{
+  color: rgb(13, 57, 13);
+  padding: 20px;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.lastsection  ul{
+  color: rgb(13, 57, 13);
+  list-style: none;
+  font-weight: 400;
+  padding-left: 20px;
+  line-height: 20pt;
+
+}
+
+#heading{
+  font-weight: bold;
+}
+
+#contactus{
+  width: 50%;
+  border: 1px solid black;
+}
+
+#Support{
+  width: 50%;
+  display: inline-block;
+  border: 1px solid black;
+
+}
+
+.access-point{
+    height: 80vh;
+    display: grid;
+    place-items: center; 
+    background-color: #04242c;
+    height: 91.1vh;
+}
+
+.access-point form{
+  width: 50%;
+  background-color: #010e11;
+  display: grid;
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+
+.access-point form label{
+  color: aqua;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.access-point form input{
+  font-size: 18px;
+  padding: 5px;
+  margin-bottom: 7px;
+}
+
+.access-point p{
+  color: aqua;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.access-point p a{
+  text-decoration: none;
+  color: gray;
+}
+
+
+
+.selectdob{
+  display: flex;
+  flex-direction: row;
+}
+
+.selectdob select{
+  height: 35px;
+  width: 200px;
+  margin-right: 40px;
+}
+
+
+
+
+
+
+/* .access-point form{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 0 auto;
+  width: 50%;
+  
+  border: 1px solid aqua;
+  align-content: center;
+  background-color: #0a1112;
+  border-radius: 10px;
+} */
+
+
+/* .access-point .suform label input{
+  padding: 30px 0px;
+}
+
+
+
+
+#suform{
+  display: flex;
+  flex-direction: column;
+  margin: 70px 70px;
+} */
+
+
+
+
+
+
+  /* footer */
+
+  footer{
+    text-align: center;
+    color: rgb(13, 57, 13);
+    margin-top: 40px;
+    height: 60px;
+  }
+
+
