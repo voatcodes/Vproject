@@ -1,0 +1,73 @@
+<%- include('partials/header') %>
+
+<main class="reviewereditprofile">
+    <form action="/editprofile/<%= profile.id%>" method="post" enctype="multipart/form-data">
+        <h1>Edit Profile</h1>
+
+        <div class="form-input">
+            <label for="">dob</label>
+            <input type="text" name="dob" id="" value="<%= profile.dob%>">
+        </div>
+
+        <div class="form-input">
+            <label for="">Name</label>
+            <input type="text"  name="fullName" id="" value="<%= profile.name%>">
+        </div>
+
+        <div class="form-input">
+            <label for="">User name</label>
+            <input type="text" name="userName" id="" value="<%= profile.userName%>">
+        </div>
+
+        <div class="form-input">
+            <label for="">Email</label>
+            <input type="email" name="email" id="" value="<%= profile.email%>">
+        </div>
+
+        <div class="form-input">
+            <label for="">Phone Number</label>
+            <input type="text" name="phoneNumber" id="" value="<%= profile.phoneNumber%>" >
+        </div>
+
+        <div class="form-input">
+            <label for="">Facebook Profile Link</label>
+            <input type="text" name="facebookURL"  id="" value="<%= profile.facebookURL%>">
+        </div>
+
+        <div class="form-input">
+            <label for="">Twitter Profile Link</label>
+            <input type="text" name="twitterURL" id="" value="<%= profile.twitterURL%>">
+        </div>
+
+        <div class="form-input">
+            <label>Instagram Profile Link</label>
+            <input type="text" name="instagramURL" id="" value="<%= profile.instagramURL%>">
+        </div>
+
+
+        <div class="form-input">
+            <label for="">Date joined</label>
+            <input type="text" name="dateJoined" id="">
+        </div>
+
+        <div class="form-input">
+            <label for="">Cover Photo</label>
+            <input type="file" name="cphotoURL" id="">
+        </div>
+
+        <div class="form-input">
+            <label for="">Profile Picture</label>
+            <input type="file" name="photoURL" id="">
+        </div>
+
+        
+
+
+
+        <input type="submit" value="Update Profile">
+
+    </form>
+</main>
+
+
+<%- include('partials/footer')%>
