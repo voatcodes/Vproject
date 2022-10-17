@@ -214,38 +214,156 @@
   margin-right: 40px;
 }
 
+/* reviewer profile   */
 
-
-
-
-
-/* .access-point form{
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  margin: 0 auto;
-  width: 50%;
-  
-  border: 1px solid aqua;
-  align-content: center;
-  background-color: #0a1112;
-  border-radius: 10px;
+/* #photosectionprofile{
+  border: 1px solid black;
+  height: 80vh;
 } */
 
 
-/* .access-point .suform label input{
-  padding: 30px 0px;
+.profpiccoverphoto{
+  border: 1px solid red;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 
+#rcphoto {
+  border: 1px solid black;
+  height: 20vh;
+  background-color: black;
+  /* position: absolute;
+  z-index: 1; */
+  
+}
+
+#rppic{
+  border: 1px solid black;
+  height: 30vh;
+  width: 30%;
+  margin-top: 100px;
+  bottom: -30px;
+  /* margin-left: 100px; */
+  z-index: 9;
+  background-color: red;
+  position: absolute;
+  margin-left: 100px;
+   top: 20px;
+}
+
+#aboutreviewer{
+  margin-top: 220px;
+  width: 100%;
+  
+  border: 1px solid black;
+
+}
+
+#tablereviewerprofile{
+  border: 1px solid black;
+  width: 60%;
+  margin-top: 20px;
+  line-height: 24pt;
+  font-size: 18px;
+}
+
+#reviewerprofile{
+  border: 1px solid black;
+}
 
 
-#suform{
-  display: flex;
-  flex-direction: column;
-  margin: 70px 70px;
+.descriptionandpersonaldetails{
+  /* display: inline-block; */
+  /* flex-direction: column; */
+  border: 1px solid black;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 71vh;
+}
+
+#descriptionandpersonaldetails1{
+  border: 1px solid black;
+  width: 50%;
+}
+
+#descriptionandpersonaldetails2{
+  border: 1px solid black; 
+  width: 50%;
+}
+
+.rpdiv1{
+  border: 1px solid black; 
+  width: 100%;
+  /* flex: 1; */
+
+}
+
+.rpdiv2{
+  border: 1px solid black; 
+  
+}
+
+
+/* reviewereditprofile */
+
+
+.reviewereditprofile{
+  height: 80vh;
+  display: grid;
+  place-items: center; 
+  background-color: #04242c;
+  height: 91.1vh;
+}
+
+.reviewereditprofile form{
+width: 50%;
+background-color: #010e11;
+display: grid;
+border-radius: 10px;
+padding: 20px;
+
+}
+
+.reviewereditprofile form label{
+color: aqua;
+font-size: 18px;
+margin-bottom: 7px;
+}
+
+.reviewereditprofile form input{
+font-size: 18px;
+padding: 5px;
+margin-bottom: 7px;
+width: 500px;
+align-self: flex-end;
+}
+
+/* .access-point p{
+color: aqua;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.access-point p a{
+text-decoration: none;
+color: gray;
 } */
 
+
+
+
+.reviewereditprofile h1{
+  margin: 0 auto;
+  justify-content: center;
+  border: 1px solid black;
+  width: 30%;
+  margin-bottom: 20px;
+  color: aqua;
+
+}
 
 
 
