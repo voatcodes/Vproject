@@ -120,9 +120,9 @@ router.get('/signup', (req, res) => {
                   businessprofile.businesses.businessDescription, 
                   businessprofile.businesses.businessLocation,
                   businessprofile.businesses.businessTagline, 
-                  businessprofile.req.businesscontactperson, 
-                  businessprofile.req.businesscontactpersonphonenumber,
-                  businessprofile.req.businessContactPersonEmail, 
+                  businessprofile.businesses.businessContactPerson, 
+                  businessprofile.businesses.businesscontactPersonPhoneNumber,
+                  businessprofile.businesses.businessContactPersonEmail, 
                   hash
                 ],
   
@@ -169,11 +169,11 @@ router.get('/signup', (req, res) => {
 
     connection.query(
       'SELECT * FROM v_project_business_profile WHERE businessemail = ?',
-      [req.body.businessemail],
+      [businessprofile.businessEmail],
       (error, results) => {
         if (results.length > 0) {
           //               // authenticate 
-          bcrypt.compare(req.body.businesspassword, results[0].pword, (error, matches) => {
+          bcrypt.compare(req.body.businessPassword, results[0].businesspassword, (error, matches) => {
             if (matches) {
               // req.session.userID = results[0].userID
               // req.session.username = results[0].fullname.split(' ')[0]
@@ -181,8 +181,8 @@ router.get('/signup', (req, res) => {
               // res.redirect('/app')
             } else {
               const businessprofile = {
-                email: req.body.businessemail,
-                password: req.body.businesspassword
+                email: req.body.businessEmail,
+                password: req.body.businessPassword
               }
               let message = 'Email/Password mismatch.'
               res.render('businessprofile', { error: true, message: message, businessprofile: businessprofile })
@@ -191,8 +191,8 @@ router.get('/signup', (req, res) => {
         } else {
 
           const businessprofile = {
-            email: req.body.businessemail,
-            password: req.body.businesspassword
+            email: req.body.businessEmail,
+            password: req.body.businessPassword
           
           }
           let message = 'Account does not exist. Please create one.'
