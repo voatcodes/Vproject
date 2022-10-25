@@ -318,6 +318,12 @@
   height: 91.1vh;
 }
 
+.reviewereditprofile .form-input{
+  display: flex;
+}
+
+
+
 .reviewereditprofile form{
 width: 50%;
 background-color: #010e11;
@@ -337,8 +343,9 @@ margin-bottom: 7px;
 font-size: 18px;
 padding: 5px;
 margin-bottom: 7px;
-width: 500px;
-align-self: flex-end;
+width: 500px; 
+
+align-content: flex-end;
 }
 
 /* .access-point p{
@@ -365,17 +372,134 @@ color: gray;
 
 }
 
+#labelrep{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+#inputrep{
+  width: 70%;
+  align-self: flex-end;
+}
+
+#submitbuttonrep{
+  width: 100%;
+}
+
+
+
+/* business views */
+
+/* signup */
+
+.access-point-biz{
+  display: grid;
+  place-items: center; 
+  /* background-color: #301e0d; */
+  background-color: #1e0d00;
+  height: 150vh;
+}
+
+.access-point-biz form{
+width: 50%;
+background-color: #110700;
+display: grid;
+border-radius: 10px;
+padding: 20px;
+border: 1px solid black;
+}
+
+.access-point-biz form label{
+color: #cfb994;
+font-size: 18px;
+margin-bottom: 7px;
+}
+
+.access-point-biz form input{
+font-size: 18px;
+padding: 5px;
+margin-bottom: 7px;
+}
+
+.access-point-biz h1{
+  border: 1px solid black;
+  font-size: 35px;
+}
+
+
+
+.access-point-biz p{
+color: #cfb994;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.access-point-biz p a{
+text-decoration: none;
+color: gray;
+}
+
+/* login */
+
+.access-point-biz-login{
+  height: 80vh;
+    display: grid;
+    place-items: center; 
+    background-color: #1e0d00 ;
+    height: 91.1vh;
+}
+
+.access-point-biz-login form{
+  width: 50%;
+  background-color: #110700;
+  display: grid;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  }
+  
+  .access-point-biz-login form label{
+  color: #cfb994;
+  font-size: 18px;
+  margin-bottom: 7px;
+  }
+  
+  .access-point-biz-login form input{
+  font-size: 18px;
+  padding: 5px;
+  margin-bottom: 7px;
+  }
+  
+  .access-point-biz-login h1{
+    border: 1px solid black;
+    font-size: 35px;
+  }
+  
+  
+  
+  .access-point-biz-login p{
+  color: #cfb994;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  
+  .access-point-biz-login p a{
+  text-decoration: none;
+  color: gray;
+
+
 
 
 
 
   /* footer */
 
-  footer{
+footer{
     text-align: center;
-    color: rgb(13, 57, 13);
     margin-top: 40px;
     height: 60px;
-  }
+    color: rgb(13, 57, 13);
+}
 
 
