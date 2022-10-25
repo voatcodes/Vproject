@@ -1,0 +1,47 @@
+<%- include('../partials/header') %>
+
+
+<main class="access-point-biz">
+    <!-- <h1>Create Your Business Profile</h1> -->
+    <form action="/businesses/signup" method="post">
+    <p>Business Details</p>
+
+    <label for="">Name of Business</label>
+    <input type="text" name="businessName" id="" required value="">
+    <label for="">Business email</label>
+    <input type="email" name="businessEmail" id="" required value="">
+    <label for="">Business Category</label>
+        <select name="businessCategory" id="business-category" required >
+        <option value="">Select category</option>
+        <option value="Hotel">Hotel</option>
+        <option value="Restaurant">Restaurant</option>
+        
+        </select>
+    <label for="">Business Description</label>
+    <input type="text" name="businessDescription" id="" required value="">
+    <label for="">Business Location</label>
+    <input type="text" name="businessLocation" id="" required value="">
+    <label for="">Tag Line</label>
+    <input type="text" name="tagLine" id="" required value="">
+
+    <p>Representative Details</p>
+
+    <label for="">Contact Person</label>
+    <input type="text" name="businessContactPerson" id="" required value="">
+    <label for="">Phone Number</label>
+    <input type="text" name="businessContactPersonPhoneNumber" id="" required value="">
+    <label for="">Email address</label>
+    <input type="email" name="businessContactPersonEmail" id="" required value="">
+    <label for="">Password</label>
+    <input type="password" name="businessPassword" id="" required value="">
+    <label for="">Confirm Password</label>
+    <input type="password" name="businessConfirmPassword" id="" required value="">
+    <input type="submit" value="Create Profile" >
+    <p>Already have an account? <a href="/businesses/login">Log In</a></p>
+    <p>By signing in or creating an account, you agree with our <a>Terms & Conditions</a>  and <a>Privacy Statement</a></p>
+        
+    </form>
+
+</main>
+
+

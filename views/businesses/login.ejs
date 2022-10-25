@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+
+<main class="access-point-biz-login">
+    <form action="/businesses/businesseslogin" method="post">
+        <p class="form-title">Log In for Business</p>
+   
+
+        <label for="">Email Adress(for Business)</label>
+        <input type="email" name="email" id="" value=""required>
+        <label for="">Password</label>
+        <input type="password" name="password" id=""value="" required minlength="8">
+        <input type="submit" value="Log In">
+        <p>Don't have a business profile? <a href="/businesses/signup">Create One</a></p>
+    </form>
+</main>
+
