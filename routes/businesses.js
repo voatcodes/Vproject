@@ -150,7 +150,7 @@ router.get('/signup', (req, res) => {
 
 
 
-  //login routes
+  
 
   // display login form
 
@@ -185,7 +185,7 @@ router.get('/signup', (req, res) => {
                 password: req.body.businessPassword
               }
               let message = 'Email/Password mismatch.'
-              res.render('businessprofile', { error: true, message: message, businessprofile: businessprofile })
+              res.render('profile', { error: true, message: message, businessprofile: businessprofile })
             }
           })
         } else {
@@ -200,6 +200,48 @@ router.get('/signup', (req, res) => {
         }
       }
     )
+  })
+
+
+  // display edit business profile
+
+
+  router.get('/editprofile/:id', (req, res) => {
+
+
+    let sql = 'SELECT * FROM  v_project_business_profile WHERE userID =?'
+  
+    connection.query(
+      sql, [parseInt(req.params.id)],
+      (error, results) => {
+
+        const businessprofile = {
+          businesses: {
+          businessName: results[0].businessname,
+          businessEmail: results[0].businessemail,
+          businessCategory: results[0].businesscategory,
+          businessDescription: results[0].businessdescription,
+          businessLocation: results[0].businesslocation,
+          businessTagline: results[0].businesstagline
+          },
+    
+          rep: {
+    
+          businessContactPerson: results[0].businesscontactperson,
+          businessContactPersonPhoneNumber: results[0].businesscontactpersonphonenumber,
+          businessContactPersonEmail: results[0].businesscontactpersonemail,
+          businessPassword: ""  
+          }
+
+        }
+
+        console.log(profile)
+  
+      res.render('businesses/editprofile', {error: false, businessprofile: businessprofile})
+      }
+  
+    )
+  
   })
 
 

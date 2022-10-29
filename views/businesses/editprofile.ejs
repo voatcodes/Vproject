@@ -1,0 +1,45 @@
+<%- include('../partials/header') %>
+
+
+<main class="access-point-biz">
+    <!-- <h1>Create Your Business Profile</h1> -->
+    <form action="/businesses/editprofile/<%= businessprofile.id%>" method="post" enctype="multipart/form-data" >
+    <p>Business Details</p>
+
+    <label for="">Name of Business</label>
+    <input type="text" name="businessName" id="" value="<%= profile.businessName%>">
+    <label for="">Business email</label>
+    <input type="email" name="businessEmail" id="" value="<%= profile.businessEmail%>">
+    <label for="">Business Category</label>
+        <select name="businessCategory" id="business-category" value="<%= profile.businessCategory%>" >
+        <option value="">Select category</option>
+        <option value="Hotel">Hotel</option>
+        <option value="Restaurant">Restaurant</option>
+        
+        </select>
+    <label for="">Business Description</label>
+    <input type="text" name="businessDescription" id=""  value="<%= profile.businessDescription%>">
+    <label for="">Business Location</label>
+    <input type="text" name="businessLocation" id=""  value="<%= profile.businessLocation%>">
+    <label for="">Tag Line</label>
+    <input type="text" name="tagLine" id="" value="<%= profile.businessTagline%>">
+
+    <p>Representative Details</p>
+
+    <label for="">Contact Person</label>
+    <input type="text" name="businessContactPerson" id=""  value="<%= profile.businessContactPerson">
+    <label for="">Phone Number</label>
+    <input type="text" name="businessContactPersonPhoneNumber" id="" value="profile.businessContactPersonPhoneNumber">
+    <label for="">Email address</label>
+    <input type="email" name="businessContactPersonEmail" id="" value="profile.businessContactPersonEmail">
+    <label for="">Password</label>
+    <input type="password" name="businessPassword" id="" value="profile.businessPassword">
+    <label for="">Confirm Password</label>
+    <input type="password" name="businessConfirmPassword" id="" value="profile.businessConfirmPassword">
+
+    <input id="submitbuttonrep" type="submit" value="Update Profile">
+    
+            
+    </form>
+
+</main>
